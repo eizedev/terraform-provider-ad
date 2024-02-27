@@ -4,7 +4,9 @@ In order to contribute to the provider, you have to build and install it manuall
 
 ## Preparation
 
-Examples for Ubuntu Linux.
+### Ubuntu Linux
+
+Examples for Ubuntu Linux
 
 ### Golang, Make
 
@@ -34,7 +36,22 @@ sudo apt update
 sudo apt install terraform
 ```
 
-## Installing the provider to `terraform.d/plugins` or `~/go/bin/terraform-provider-ad`
+### Windows
+
+Examples for Windows
+
+```powershell
+winget install -e --id GnuWin32.Make
+winget install -e --id golang.go
+winget install -e --id Hashicorp.terraform
+```
+
+Restart powershell console
+
+## Installing the provider central plugins directory
+
+Windows: `~\go\bin\terraform-provider-ad.exe`  
+Linux: `~/go/bin/terraform-provider-ad`
 
 ```shell
 make build
