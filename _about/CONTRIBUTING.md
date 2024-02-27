@@ -34,7 +34,7 @@ sudo apt update
 sudo apt install terraform
 ```
 
-## Installing the provider to `terraform.d/plugins`
+## Installing the provider to `terraform.d/plugins` or `~/go/bin/terraform-provider-ad`
 
 ```shell
 make build
