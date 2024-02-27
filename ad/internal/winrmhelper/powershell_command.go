@@ -95,7 +95,7 @@ func (p *PSCommand) Run(conf *config.ProviderConf) (*PSCommandResult, error) {
 	if err != nil {
 		return nil, fmt.Errorf("while acquiring winrm client: %s", err)
 	}
-	
+
 	encodedCmd := winrm.Powershell(p.cmd)
 
 	if !p.ExecLocally && conn != nil {
