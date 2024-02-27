@@ -32,7 +32,7 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 sudo apt update
 # install terraform
 sudo apt install terraform
-
+```
 
 ## Installing the provider to `terraform.d/plugins`
 
