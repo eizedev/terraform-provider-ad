@@ -6,18 +6,33 @@ In order to contribute to the provider, you have to build and install it manuall
 
 Examples for Ubuntu Linux.
 
-Needed: Golang, Make
+### Golang, Make
 
 ```shell
 sudo apt install golang-go
 sudo apt install make
 ```
 
-Fixing source code (if needed)
+### Fixing source code (if needed)
 
 ```shell
 make fmt
 ```
+
+### Terraform
+
+```shell
+# Add gpg key to keyring
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmour -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+# Check key
+gpg --no-default-keyring --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg --fingerprint
+# Add official Hashicorp repository
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+# update
+sudo apt update
+# install terraform
+sudo apt install terraform
+
 
 ## Installing the provider to `terraform.d/plugins`
 
