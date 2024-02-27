@@ -47,6 +47,7 @@ git remote add randomswdev https://github.com/randomswdev/terraform-provider-ad.
 git pull randomswdev main
 ```
 
+* Perhaps you need to fix some merge conflicts, f.e. for `index.md` after pulling changes from one forked repository (done in my project)
 * Build provider as described [here](https://github.com/hashicorp/terraform-provider-ad/blob/main/_about/CONTRIBUTING.md)
 * Please note that there can be other issues which isn't reported here or fixed using patches above, so **use your newly built provider at your own risk**
 
